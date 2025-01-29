@@ -1,0 +1,57 @@
+.game-container {
+    width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.game-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.player-stats, .enemy-stats {
+    border: 1px solid #ccc;
+    padding: 15px;
+    width: 45%;
+    background-color: #f5f5f5;
+}
+
+.battle-log {
+    height: 300px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+    overflow-y: auto;
+    background-color: #fff;
+}
+
+#logContent {
+    font-family: monospace;
+}
+
+.control-panel {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+} 

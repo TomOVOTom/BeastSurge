@@ -1,0 +1,59 @@
+.item-panel {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.item-button {
+    position: relative;
+    padding: 10px 20px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.item-button:hover .item-tooltip {
+    display: block;
+}
+
+.item-button.empty {
+    background: #9E9E9E;
+    cursor: not-allowed;
+}
+
+.item-count {
+    margin-left: 5px;
+    font-size: 0.9em;
+}
+
+.item-tooltip {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 14px;
+    white-space: nowrap;
+    margin-bottom: 5px;
+}
+
+.buff-display {
+    margin-top: 10px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.buff-item {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 3px;
+} 

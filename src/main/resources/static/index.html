@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>兽潮文字游戏</title>
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/achievements.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/items.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-info">
+            <div class="player-stats">
+                <h2>玩家状态</h2>
+                <div class="progress-bar">
+                    <div id="playerHealthBar" class="progress-fill" style="width: 100%"></div>
+                </div>
+                <p>等级: <span id="playerLevel" class="stat-value">1</span></p>
+                <p>经验值: <span id="playerExp" class="stat-value">0</span>/<span id="nextLevelExp">100</span></p>
+                <p>生命值: <span id="playerHealth" class="stat-value">100/100</span></p>
+                <p>攻击力: <span id="playerAttack" class="stat-value">10</span></p>
+                <p>防御力: <span id="playerDefense" class="stat-value">5</span></p>
+            </div>
+            
+            <div class="enemy-stats">
+                <h2>怪物状态</h2>
+                <div class="progress-bar">
+                    <div id="enemyHealthBar" class="progress-fill enemy" style="width: 100%"></div>
+                </div>
+                <p>当前波数: <span id="currentWave" class="stat-value">1</span></p>
+                <p>名称: <span id="enemyName" class="stat-value">-</span></p>
+                <p>生命值: <span id="enemyHealth" class="stat-value">-</span></p>
+                <p>攻击力: <span id="enemyAttack" class="stat-value">-</span></p>
+            </div>
+        </div>
+
+        <div class="battle-log" id="battleLog">
+            <h3>战斗记录</h3>
+            <div id="logContent"></div>
+        </div>
+
+        <div class="control-panel">
+            <button id="attackBtn">攻击</button>
+            <button id="defendBtn">防御</button>
+        </div>
+    </div>
+    <script type="module" src="js/game.js"></script>
+</body>
+</html> 

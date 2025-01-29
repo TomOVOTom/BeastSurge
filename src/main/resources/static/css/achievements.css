@@ -1,0 +1,67 @@
+.achievement-panel {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    width: 300px;
+}
+
+.achievement-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.achievement-list {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.achievement-item {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.achievement-item.locked {
+    opacity: 0.6;
+}
+
+.achievement-item.unlocked {
+    background: rgba(76, 175, 80, 0.3);
+}
+
+.achievement-complete {
+    color: #4CAF50;
+    float: right;
+}
+
+.achievement-notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(76, 175, 80, 0.9);
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    animation: slideIn 0.5s ease-out;
+}
+
+.achievement-notification.fade-out {
+    animation: fadeOut 1s ease-out;
+}
+
+@keyframes slideIn {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+} 
